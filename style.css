@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+#main {
+    background-color: hsl(0, 0%, 85%);
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+
+
+#main-head {
+    background-color: hsl(0, 0%, 80%);
+    height: 5vh;
+    display: flex;
+    justify-content: flex-end;
+    padding: .5rem;
+    gap: 1rem;
+}
+
+#r2 {
+    height: 95vh;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    background-color: hsl(0, 0%, 70%);
+}
+
+#main-sidebar {
+    background-color: hsl(0, 0%, 90%);
+    min-width: 200px;
+}
+
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+}
+
+.tabcontent.active {
+    display: block;
+}
+
+
+
+button {
+    padding: 1px;
+}

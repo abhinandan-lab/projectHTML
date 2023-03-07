@@ -1,12 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
-    <h1>yeeh boy!</h1>
+    <section id="main">
+
+
+        <div id="main-head">
+            <button id="editor" onclick="toggleModal(event, 'content')">Editor</button>
+            <button id="showbtn" onclick="toggleModal(event, 'content-code')">Show Code</button>
+        </div>
+
+        <div id="r2">
+            <div id="main-sidebar">
+                sidbar
+            </div>
+
+            <div id="content" class="tabcontent active ">
+                editor
+            </div>
+
+            <div id="content-code" class="tabcontent">
+                codes
+            </div>
+
+        </div>
+
+    </section>
+    <script src="script.js"></script>
 </body>
+
 </html>
