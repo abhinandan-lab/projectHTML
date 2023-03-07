@@ -1,81 +1,108 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
 
 #main {
-    background-color: hsl(0, 0%, 85%);
-    width: 100vw;
-    height: 100vh;
-    position: relative;
+  background-color: hsl(0, 0%, 85%);
+  width: 100vw;
+  height: 100vh;
+  position: relative;
 }
 
-
-
 #main-head {
-    background-color: hsl(0, 0%, 80%);
-    height: 5vh;
-    display: flex;
-    justify-content: flex-end;
-    padding: .5rem;
-    gap: 1rem;
+  background-color: hsl(0, 0%, 80%);
+  height: 5vh;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0.5rem;
+  gap: 1rem;
 }
 
 #r2 {
-    height: 95vh;
-    display: grid;
-    grid-template-columns: 1fr 5fr;
-    grid-template-rows: 1fr;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    background-color: hsl(0, 0%, 70%);
+  height: 95vh;
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  background-color: hsl(0, 0%, 70%);
 }
 
 #main-sidebar {
-    background-color: hsl(0, 0%, 80%);
-    min-width: 200px;
-    display: flex;
-    flex-direction: column;
+  background-color: hsl(0, 0%, 80%);
+  min-width: 200px;
+  display: flex;
+  flex-direction: column;
 }
 
 .tabcontent {
-    display: none;
-    padding: 6px 12px;
+  display: none;
 }
 
 .tabcontent.active {
-    display: block;
+  display: block;
 }
 
-
 #sidebarbtns {
-    display: flex;
-    justify-content: space-evenly;
-    padding: 5px;
-    background-color: hsl(0, 0%, 90%);
+  display: flex;
+  justify-content: space-evenly;
+  padding: 5px;
+  background-color: hsl(0, 0%, 90%);
 }
 
 .tabcontent-sidebar {
-    display: none;
-    padding: 5px;
-    flex-direction: column;
-    justify-content: space-between;
-    /* border: 1px solid black; */
-    flex: 1;
-
+  display: none;
+  padding: 5px;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
 }
 
 .tabcontent-sidebar.active {
-    display: flex;
+  display: flex;
 }
 
-
 button {
-    padding: 1px;
+  padding: 1px;
 }
 
 .btn-active {
-    font-weight: bold;
+  font-weight: bold;
 }
+
+#sidebar-elements > div input {
+  width: 100%;
+  padding: 1px;
+}
+#sidebar-elements > div #listelments {
+  margin-top: 1rem;
+}
+#sidebar-elements > div #listelments .elementitem {
+  display: flex;
+  justify-content: space-between;
+  padding: 3px;
+  border: 1px solid hsl(0, 0%, 60%);
+}
+#sidebar-elements > div #listelments .elementitem button {
+  padding: 0 0.9rem;
+}
+
+#ss-box textarea {
+  width: 100%;
+}
+#ss-box > div {
+  margin-top: 3px;
+  display: flex;
+  justify-content: space-between;
+  padding: 3px;
+  border: 1px solid hsl(0, 0%, 60%);
+}
+#ss-box > div label {
+  text-transform: capitalize;
+}
+
+#content {
+  background-color: hsl(0, 0%, 100%);
+}/*# sourceMappingURL=style.css.map */

@@ -6,21 +6,21 @@ function toggleModal(evt, idname, mybtn) {
 
     for (let index = 0; index < tabs.length; index++) {
         const element = tabs[index];
-        if(element.id == idname) {
+        if (element.id == idname) {
             element.style.display = 'block';
             const list = navbtns[index].classList;
-            list.add("btn-active");   
+            list.add("btn-active");
         }
 
         else {
             element.style.display = 'none';
             navbtns[index].className = '';
-        }   
+        }
     }
 }
 
 
-function toggleSidebar(evt, idname){
+function toggleSidebar( idname) {
 
     let tabs = document.querySelectorAll('.tabcontent-sidebar');
 
@@ -28,15 +28,67 @@ function toggleSidebar(evt, idname){
 
     for (let index = 0; index < tabs.length; index++) {
         const element = tabs[index];
-        if(element.id == idname) {
+        if (element.id == idname) {
             element.style.display = 'flex';
             const list = navbtns[index].classList;
-            list.add("btn-active");   
+            list.add("btn-active");
         }
 
         else {
             element.style.display = 'none';
             navbtns[index].className = '';
-        }   
+        }
     }
 }
+
+
+function selectStyleTab() {
+    toggleSidebar('sidebar-style');
+}
+
+
+
+
+
+const mainContainer = document.getElementById('content');
+
+
+function additem(item) {
+    const rootContainer = document.getElementById('content');
+    let a = document.createElement(item);
+    a.innerHTML = 'praise the LORD';
+    rootContainer.append(a);
+    // console.log(rootContainer);
+}
+
+
+
+
+document.onclick = (e) => {
+    if(mainContainer.contains(e.target) && (mainContainer != e.target)) {
+        e.target.style.border = '1px solid black';
+        selectStyleTab();
+
+        let obj1 = new StyleTab(e.target);
+    }
+}
+
+document.onmouseover = (e) => {
+    if(mainContainer.contains(e.target) && (mainContainer != e.target)) {
+        e.target.style.border = '1px solid blue';
+    }
+}
+
+
+document.onmouseout = (e) => {
+    if(mainContainer.contains(e.target) && (mainContainer != e.target)) {
+        console.log('leave');
+        e.target.style.border = 'none';
+    }
+}
+
+
+
+// document.getElementById("test").oninput = function() {
+//     console.log('hhhiihhih');    
+// };

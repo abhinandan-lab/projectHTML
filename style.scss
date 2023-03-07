@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+#main {
+    background-color: hsl(0, 0%, 85%);
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+
+
+#main-head {
+    background-color: hsl(0, 0%, 80%);
+    height: 5vh;
+    display: flex;
+    justify-content: flex-end;
+    padding: .5rem;
+    gap: 1rem;
+}
+
+#r2 {
+    height: 95vh;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    background-color: hsl(0, 0%, 70%);
+}
+
+#main-sidebar {
+    background-color: hsl(0, 0%, 80%);
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.tabcontent {
+    display: none;
+    // padding: 6px 12px;
+}
+
+.tabcontent.active {
+    display: block;
+}
+
+
+#sidebarbtns {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5px;
+    background-color: hsl(0, 0%, 90%);
+}
+
+.tabcontent-sidebar {
+    display: none;
+    padding: 5px;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+}
+
+.tabcontent-sidebar.active {
+    display: flex;
+}
+
+
+button {
+    padding: 1px;
+}
+
+.btn-active {
+    font-weight: bold;
+}
+
+
+#sidebar-elements {
+    // background-color: red;
+
+    > div {
+        // background-color: green;
+
+        input {
+            width: 100%;
+            padding: 1px;
+        }
+
+        #listelments {
+            margin-top: 1rem;
+            
+            .elementitem {
+                display: flex;
+                justify-content: space-between;
+                padding: 3px;
+                border: 1px solid hsl(0, 0%, 60%);
+
+                button {
+                    padding: 0 .9rem;
+                }
+
+            }
+        }
+    }
+}
+
+#ss-box {
+
+    textarea {
+        width: 100%;
+    }
+
+    > div {
+        margin-top: 3px;
+        display: flex;
+        justify-content: space-between;
+        padding: 3px;
+        border: 1px solid hsl(0, 0%, 60%);
+
+        label {
+            text-transform: capitalize;
+        }
+    }
+}
+
+#content {
+    background-color: hsl(0, 0%, 100%);
+}

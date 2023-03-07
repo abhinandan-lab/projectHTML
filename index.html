@@ -8,6 +8,9 @@
     <title>Document</title>
 
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
+    <script defer src="engine.js"></script>
 
 </head>
 
@@ -24,21 +27,39 @@
             <div id="main-sidebar">
 
                 <div id="sidebarbtns">
-                    <button id="layout-btn" class="btn-active" onclick="toggleSidebar(event, 'sidebar-layout')">Layout</button>
-                    <button id="style-btn" class="" onclick="toggleSidebar(event, 'sidebar-style')">Style</button>
-                    <button id="elements-btn" class="" onclick="toggleSidebar(event, 'sidebar-elements')">Elements</button>
+                    <button id="layout-btn" class="btn-active" onclick="toggleSidebar( 'sidebar-layout')">Layout</button>
+                    <button id="style-btn" class="" onclick="toggleSidebar( 'sidebar-style')">Style</button>
+                    <button id="elements-btn" class="" onclick="toggleSidebar( 'sidebar-elements')">Elements</button>
                 </div>
 
 
                 <div id="sidebar-layout" class="tabcontent-sidebar active ">
-                    <div>main div</div>
+                    <div>
+                       d
+                    </div>
                     <div>bottom div</div>
                 </div>
                 <div id="sidebar-style" class="tabcontent-sidebar">
-                    this is style
+                    <div id="ss-box">
+                        main div container
+                     </div>
+                     <div>bottom div</div>
                 </div>
                 
                 <div id="sidebar-elements" class="tabcontent-sidebar">
+                    <div>
+                        <input type="search" id="search-elements" placeholder="serach elements...">
+
+                        <div id="listelments">
+                            <div class="elementitem">
+                                <p>text</p>
+                                <button onclick="additem('p');" class="element-add">
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                        
+                    </div>
                     this is Elements
                 </div>
 
@@ -46,7 +67,8 @@
             </div>
 
             <div id="content" class="tabcontent active ">
-                editor
+
+
             </div>
 
             <div id="content-code" class="tabcontent">
@@ -56,6 +78,10 @@
         </div>
 
     </section>
+
+
+    <!-- <textarea name="" id="test" cols="30" rows="10"></textarea> -->
+
     <script src="script.js"></script>
 </body>
 
