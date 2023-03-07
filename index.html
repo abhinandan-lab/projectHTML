@@ -16,13 +16,33 @@
 
 
         <div id="main-head">
-            <button id="editor" onclick="toggleModal(event, 'content')">Editor</button>
-            <button id="showbtn" onclick="toggleModal(event, 'content-code')">Show Code</button>
+            <button id="editor" class="btn-active" onclick="toggleModal(event, 'content', this)">Editor</button>
+            <button id="showbtn" class="" onclick="toggleModal(event, 'content-code', this)">Show Code</button>
         </div>
 
         <div id="r2">
             <div id="main-sidebar">
-                sidbar
+
+                <div id="sidebarbtns">
+                    <button id="layout-btn" class="btn-active" onclick="toggleSidebar(event, 'sidebar-layout')">Layout</button>
+                    <button id="style-btn" class="" onclick="toggleSidebar(event, 'sidebar-style')">Style</button>
+                    <button id="elements-btn" class="" onclick="toggleSidebar(event, 'sidebar-elements')">Elements</button>
+                </div>
+
+
+                <div id="sidebar-layout" class="tabcontent-sidebar active ">
+                    <div>main div</div>
+                    <div>bottom div</div>
+                </div>
+                <div id="sidebar-style" class="tabcontent-sidebar">
+                    this is style
+                </div>
+                
+                <div id="sidebar-elements" class="tabcontent-sidebar">
+                    this is Elements
+                </div>
+
+
             </div>
 
             <div id="content" class="tabcontent active ">

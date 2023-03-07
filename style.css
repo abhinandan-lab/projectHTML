@@ -34,8 +34,10 @@
 }
 
 #main-sidebar {
-    background-color: hsl(0, 0%, 90%);
+    background-color: hsl(0, 0%, 80%);
     min-width: 200px;
+    display: flex;
+    flex-direction: column;
 }
 
 .tabcontent {
@@ -48,7 +50,32 @@
 }
 
 
+#sidebarbtns {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5px;
+    background-color: hsl(0, 0%, 90%);
+}
+
+.tabcontent-sidebar {
+    display: none;
+    padding: 5px;
+    flex-direction: column;
+    justify-content: space-between;
+    /* border: 1px solid black; */
+    flex: 1;
+
+}
+
+.tabcontent-sidebar.active {
+    display: flex;
+}
+
 
 button {
     padding: 1px;
+}
+
+.btn-active {
+    font-weight: bold;
 }
