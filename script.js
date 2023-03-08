@@ -17,6 +17,20 @@ function toggleModal(evt, idname, mybtn) {
             navbtns[index].className = '';
         }
     }
+
+
+    if(mybtn.id == 'showbtn'){
+        console.log('praise JESUS');
+
+        let a = document.getElementById('content').innerHTML;
+        let b = document.getElementById('content-code');
+        b.innerText = a;
+        
+
+
+    }
+
+
 }
 
 
@@ -79,7 +93,6 @@ document.onmouseover = (e) => {
     }
 }
 
-
 document.onmouseout = (e) => {
     if(mainContainer.contains(e.target) && (mainContainer != e.target)) {
         console.log('leave');
@@ -89,6 +102,13 @@ document.onmouseout = (e) => {
 
 
 
-// document.getElementById("test").oninput = function() {
-//     console.log('hhhiihhih');    
+// const showCode = document.getElementById('content-code');
+
+// showCode.addEventListener('click', ()=>{
+//     // msg.classList.toggle('reveal');
+// });
+
+// showCode.onclick = function() {
+//     console.log('hiiiiiiiiiiiiiiiiiiiiiiiii');
+//     item.innerHTML = tarea.value;  
 // };

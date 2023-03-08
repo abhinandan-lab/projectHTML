@@ -7,7 +7,7 @@
 #main {
   background-color: hsl(0, 0%, 85%);
   width: 100vw;
-  height: 100vh;
+  height: 95vh;
   position: relative;
 }
 
@@ -18,23 +18,29 @@
   justify-content: flex-end;
   padding: 0.5rem;
   gap: 1rem;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  width: 100%;
 }
 
 #r2 {
+  margin-top: 5vh;
   height: 95vh;
-  display: grid;
-  grid-template-columns: 1fr 5fr;
-  grid-template-rows: 1fr;
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
   background-color: hsl(0, 0%, 70%);
 }
 
 #main-sidebar {
   background-color: hsl(0, 0%, 80%);
   min-width: 200px;
+  width: 16vw;
+  max-width: 16vw;
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 .tabcontent {
@@ -58,6 +64,7 @@
   flex-direction: column;
   justify-content: space-between;
   flex: 1;
+  overflow-y: scroll;
 }
 
 .tabcontent-sidebar.active {
@@ -105,4 +112,6 @@ button {
 
 #content {
   background-color: hsl(0, 0%, 100%);
+  overflow-y: scroll;
+  flex-grow: 1;
 }/*# sourceMappingURL=style.css.map */
