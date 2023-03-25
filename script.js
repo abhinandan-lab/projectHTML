@@ -100,15 +100,3 @@ document.onmouseout = (e) => {
     }
 }
 
-
-
-// const showCode = document.getElementById('content-code');
-
-// showCode.addEventListener('click', ()=>{
-//     // msg.classList.toggle('reveal');
-// });
-
-// showCode.onclick = function() {
-//     console.log('hiiiiiiiiiiiiiiiiiiiiiiiii');
-//     item.innerHTML = tarea.value;  
-// };
